@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FELA RICE | Sabor que une</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f7f3e8;color:#1d2b1f;overflow-x:hidden}
+h1,h2,h3,.logo{font-family:'Baloo 2',cursive}
+
+/* Splash Screen */
+#splash{
+position:fixed;top:0;left:0;width:100%;height:100%;
+background:linear-gradient(135deg,#f4c542,#e67e22);
+display:flex;justify-content:center;align-items:center;
+flex-direction:column;z-index:9999;
+animation:fadeOut 2.5s forwards;
+animation-delay:2s;
+}
+.chicken{font-size:120px;animation:bounce 1s infinite}
+#splash h1{font-size:4rem;color:#1d2b1f}
+@keyframes bounce{50%{transform:translateY(-20px)}}
+@keyframes fadeOut{to{opacity:0;visibility:hidden}}
+
+header{background:#1d2b1f;color:#fff;padding:20px 8%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:2.8rem;color:#f4c542}
+nav a{color:white;text-decoration:none;margin:0 15px;font-weight:500}
+.hero{padding:100px 8%;background:linear-gradient(135deg,#f4c542,#e67e22);text-align:center}
+.hero h1{font-size:5rem;color:#1d2b1f}
+.hero p{margin:20px auto;font-size:1.2rem;max-width:700px}
+.btn{padding:18px 30px;background:#1d2b1f;color:white;text-decoration:none;border-radius:15px;font-weight:600}
+.section{padding:80px 8%}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.card{background:white;padding:30px;border-radius:20px;box-shadow:0 12px 25px rgba(0,0,0,.12)}
+.order-form{background:#fff;padding:35px;border-radius:25px;max-width:650px;margin:auto;box-shadow:0 10px 20px rgba(0,0,0,.1)}
+input,select,textarea{width:100%;padding:16px;margin:12px 0;border:1px solid #ddd;border-radius:12px}
+button{width:100%;padding:16px;background:#e67e22;color:white;border:none;border-radius:12px;font-size:1rem;cursor:pointer;font-weight:bold}
+footer{background:#1d2b1f;color:white;text-align:center;padding:25px}
+</style>
+</head>
+<body>
+<div id="splash">
+<div class="chicken">🍗</div>
+<h1>FELA RICE</h1>
+<p>Sabor que une</p>
+</div>
+<header>
+<div class="logo">FELA RICE</div>
+<nav><a href="#nosotros">Nosotros</a><a href="#menu">Menú</a><a href="#pedido">Pedir</a></nav>
+</header>
+<section class="hero">
+<h1>Sabor que une</h1>
+<p>El auténtico arroz con pollo colombiano hecho con tradición, calidez y sabor casero.</p>
+<a class="btn" href="#pedido">Haz tu pedido</a>
+</section>
+<section id="nosotros" class="section"><h2>Quiénes somos</h2><br><p>FELA RICE nace en Facatativá de la unión de Felipe, Edver, Luz y Alejandro para compartir tradición colombiana con calidad.</p></section>
+<section id="menu" class="section"><h2>Nuestros productos</h2><br><div class="cards"><div class="card"><h3>Tradicional</h3><p>Sabor clásico colombiano.</p></div><div class="card"><h3>Paisa</h3><p>Con aguacate y maduro.</p></div><div class="card"><h3>Campesino</h3><p>Frescura y sazón casera.</p></div></div></section>
+<section id="pedido" class="section"><h2>Haz tu pedido</h2><br><div class="order-form"><input type="text" placeholder="Nombre"><input type="tel" placeholder="Teléfono"><select><option>Tradicional</option><option>Paisa</option><option>Campesino</option></select><textarea rows="4" placeholder="Dirección"></textarea><button>Confirmar Pedido</button></div></section>
+<footer><p>FELA RICE © 2026 | Facatativá - Colombia</p></footer>
+</body>
+</html>
